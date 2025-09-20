@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[212],{3212:(e,t,n)=>{n.r(t),n.d(t,{default:()=>a});var i=n(579);const a=()=>(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)("h1",{children:"Attacker Overview"}),(0,i.jsx)("p",{children:"This section covers the role, motivations, and common methods of attackers in a cybersecurity context. We will delve into different types of attacks and the mindset required to anticipate and identify potential threats."})]})}}]);
+//# sourceMappingURL=212.d378991b.chunk.js.map
