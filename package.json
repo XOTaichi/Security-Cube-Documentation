@@ -25,7 +25,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "homepage": "https://xotaichi.github.io/Security-Cube-Documentation.io"
+    "homepage": "https://xotaichi.github.io/Security-Cube-Documentation/"
   },
   "eslintConfig": {
     "extends": [
