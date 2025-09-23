@@ -1,21 +1,26 @@
-// src/chapters/attacker/Introduction.jsx
+import React from 'react';
 
-const AttackerIntroduction = () => (
+const Installation = () => (
   <>
-    {/* 使用 <h1> 作为主标题 */}
-    <h1>aaaaIntroduction</h1>
-    <p>This is the introduction for the Attacker. An attacker is an individual or entity that attempts to gain unauthorized access to a system, network, or data. Their motivations can vary widely, from financial gain to espionage or simply mischief.</p>
-    <p>We will explore various types of attackers and their common methodologies.</p>
-
-    {/* 使用 <h2> 作为次级标题 */}
-    <h2>Common Types of Attacks</h2>
-    <ul>
-      <li><strong>Phishing:</strong> Deceiving users into providing sensitive information.</li>
-      <li><strong>Malware:</strong> Installing malicious software like viruses or ransomware.</li>
-      <li><strong>Denial-of-Service (DoS):</strong> Overwhelming a system to make it unavailable to users.</li>
-      <li><strong>SQL Injection:</strong> Exploiting vulnerabilities in database queries.</li>
-    </ul>
+    <h2>Installation</h2>
+    <p>Follow the steps below to set up and run the project:</p>
+    <ol>
+      <li><strong>Clone the repository:</strong> Open your terminal and run the following command:</li>
+      <pre><code>git clone https://github.com/XOTaichi/Security-Cube-Artifact.git</code></pre>
+      
+      <li><strong>Navigate to the project directory:</strong> Once the repository is cloned, navigate to the project directory:</li>
+      <pre><code>cd Security-Cube-Artifact</code></pre>
+      
+      <li><strong>Create a Conda environment:</strong> Create a new Conda environment with Python 3.11:</li>
+      <pre><code>conda create --name securitycube python=3.11 -y</code></pre>
+      
+      <li><strong>Activate the environment:</strong> Activate the Conda environment:</li>
+      <pre><code>conda activate securitycube</code></pre>
+      
+      <li><strong>Install the dependencies:</strong> Install the required Python dependencies using pip:</li>
+      <pre><code>pip install -r requirements.txt</code></pre>
+    </ol>
   </>
 );
 
-export default AttackerIntroduction;
+export default Installation;
