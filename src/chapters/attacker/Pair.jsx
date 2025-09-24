@@ -1,5 +1,6 @@
 import React from 'react';
 import CodeBlock from '../../components/CodeBlock';
+import '../../App.css';
 
 const PairAttackerTutorial = () => (
   <div>
