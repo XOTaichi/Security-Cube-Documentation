@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/Security-Cube-Documentation/static/css/main.b9e04ff6.css",
-    "main.js": "/Security-Cube-Documentation/static/js/main.f72a32a3.js",
+    "main.css": "/Security-Cube-Documentation/static/css/main.60601c86.css",
+    "main.js": "/Security-Cube-Documentation/static/js/main.84529663.js",
     "static/js/81.72a2b43f.chunk.js": "/Security-Cube-Documentation/static/js/81.72a2b43f.chunk.js",
     "static/js/471.2f790d03.chunk.js": "/Security-Cube-Documentation/static/js/471.2f790d03.chunk.js",
     "static/js/841.62ba6e9b.chunk.js": "/Security-Cube-Documentation/static/js/841.62ba6e9b.chunk.js",
     "static/js/212.d378991b.chunk.js": "/Security-Cube-Documentation/static/js/212.d378991b.chunk.js",
-    "static/js/573.c53b0911.chunk.js": "/Security-Cube-Documentation/static/js/573.c53b0911.chunk.js",
+    "static/js/573.53f75043.chunk.js": "/Security-Cube-Documentation/static/js/573.53f75043.chunk.js",
     "static/js/346.2e1730a2.chunk.js": "/Security-Cube-Documentation/static/js/346.2e1730a2.chunk.js",
     "static/js/474.f20764a3.chunk.js": "/Security-Cube-Documentation/static/js/474.f20764a3.chunk.js",
     "static/js/511.ae25d443.chunk.js": "/Security-Cube-Documentation/static/js/511.ae25d443.chunk.js",
@@ -22,12 +22,12 @@
     "static/js/881.299992aa.chunk.js": "/Security-Cube-Documentation/static/js/881.299992aa.chunk.js",
     "static/js/210.0ffa74cd.chunk.js": "/Security-Cube-Documentation/static/js/210.0ffa74cd.chunk.js",
     "index.html": "/Security-Cube-Documentation/index.html",
-    "main.b9e04ff6.css.map": "/Security-Cube-Documentation/static/css/main.b9e04ff6.css.map",
-    "main.f72a32a3.js.map": "/Security-Cube-Documentation/static/js/main.f72a32a3.js.map",
+    "main.60601c86.css.map": "/Security-Cube-Documentation/static/css/main.60601c86.css.map",
+    "main.84529663.js.map": "/Security-Cube-Documentation/static/js/main.84529663.js.map",
     "81.72a2b43f.chunk.js.map": "/Security-Cube-Documentation/static/js/81.72a2b43f.chunk.js.map",
     "471.2f790d03.chunk.js.map": "/Security-Cube-Documentation/static/js/471.2f790d03.chunk.js.map",
     "212.d378991b.chunk.js.map": "/Security-Cube-Documentation/static/js/212.d378991b.chunk.js.map",
-    "573.c53b0911.chunk.js.map": "/Security-Cube-Documentation/static/js/573.c53b0911.chunk.js.map",
+    "573.53f75043.chunk.js.map": "/Security-Cube-Documentation/static/js/573.53f75043.chunk.js.map",
     "474.f20764a3.chunk.js.map": "/Security-Cube-Documentation/static/js/474.f20764a3.chunk.js.map",
     "511.ae25d443.chunk.js.map": "/Security-Cube-Documentation/static/js/511.ae25d443.chunk.js.map",
     "200.c0eee85c.chunk.js.map": "/Security-Cube-Documentation/static/js/200.c0eee85c.chunk.js.map",
@@ -42,7 +42,7 @@
     "210.0ffa74cd.chunk.js.map": "/Security-Cube-Documentation/static/js/210.0ffa74cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9e04ff6.css",
-    "static/js/main.f72a32a3.js"
+    "static/css/main.60601c86.css",
+    "static/js/main.84529663.js"
   ]
 }
