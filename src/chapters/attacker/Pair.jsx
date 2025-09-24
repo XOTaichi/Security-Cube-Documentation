@@ -14,7 +14,7 @@ const PairAttackerTutorial = () => (
       <strong>PairAttacker</strong> accepts the following parameters (constructor signature: <code>PairAttacker(attack_model, judge_model, epoch=20, concurrent_number=5, **kwargs)</code>):
     </p>
 
-    <table>
+    <table className="param-table">
       <thead>
         <tr>
           <th>Parameter</th>
