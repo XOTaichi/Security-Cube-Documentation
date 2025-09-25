@@ -119,7 +119,7 @@ result = attacker.run(goals=goals, target=target_model, target_strs=target_strs,
     <p>
       <strong>result</strong> is a list (each element corresponds to an attack attempt / record). Assume the returned entry follows the common <code>result_entry</code> structure:
     </p>
-    <table>
+    <table className="param-table">
   <thead>
     <tr>
       <th>Parameter</th>
@@ -206,6 +206,9 @@ with open('test/temp_pair.json', 'w') as output_file:
         Chao, Patrick, et al. "<strong>Jailbreaking black box large language models in twenty queries</strong>." In <i>2025 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)</i>, pp. 23–42. 2025.
       </p>
     </blockquote>
+     <p>
+    You can find the full paper on <a href="https://ieeexplore.ieee.org/abstract/document/10992337/" target="_blank" rel="noopener noreferrer">IEEE</a>.
+  </p>
 
   </div>
 );
