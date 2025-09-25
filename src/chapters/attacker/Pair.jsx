@@ -4,7 +4,7 @@ import '../../App.css';
 
 const PairAttackerTutorial = () => (
   <div>
-    <h1>PairAttacker</h1>
+    <h1>Pair</h1>
 
     <p>
       This tutorial demonstrates how to use the <strong>PairAttacker</strong> (an implementation of <code>AttackerPipeline</code>) to generate adversarial prompts and evaluate a target model's susceptibility.
