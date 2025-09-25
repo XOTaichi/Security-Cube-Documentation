@@ -13,16 +13,58 @@ const AutoDANTurboTutorial = () => (
     <p>
       The <strong>AutoDANTurbo</strong> class accepts the following parameters:
     </p>
-    <ul>
-      <li><strong>embedding_model</strong> (<i>EmbeddingProvider</i>): The model used to generate embeddings for retrieval-based strategies.</li>
-      <li><strong>attacker_model</strong> (<i>BaseLanguageModel</i>): The model used to generate the adversarial prompts for attacking the target.</li>
-      <li><strong>score_model</strong> (<i>BaseLanguageModel</i>): The model used to score the generated adversarial prompts.</li>
-      <li><strong>summarize_model</strong> (<i>BaseLanguageModel</i>): The model used to summarize the adversarial prompts and responses.</li>
-      <li><strong>concurrent_number</strong> (<i>int</i>, default=5): The number of concurrent tasks to run for generating adversarial prompts.</li>
-      <li><strong>epochs</strong> (<i>int</i>, default=20): The number of epochs (iterations) to train the attack model.</li>
-      <li><strong>warm_up_iterations</strong> (<i>int</i>, default=1): The number of iterations used for warm-up attacks.</li>
-      <li><strong>lifelong_iterations</strong> (<i>int</i>, default=4): The number of iterations for lifelong (continuous) attacks.</li>
-    </ul>
+    <table className="param-table">
+    <thead>
+      <tr>
+        <th>Parameter</th>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>embedding_model</strong></td>
+        <td><i>EmbeddingProvider</i></td>
+        <td>The model used to generate embeddings for retrieval-based strategies.</td>
+      </tr>
+      <tr>
+        <td><strong>attacker_model</strong></td>
+        <td><i>BaseLanguageModel</i></td>
+        <td>The model used to generate the adversarial prompts for attacking the target.</td>
+      </tr>
+      <tr>
+        <td><strong>score_model</strong></td>
+        <td><i>BaseLanguageModel</i></td>
+        <td>The model used to score the generated adversarial prompts.</td>
+      </tr>
+      <tr>
+        <td><strong>summarize_model</strong></td>
+        <td><i>BaseLanguageModel</i></td>
+        <td>The model used to summarize the adversarial prompts and responses.</td>
+      </tr>
+      <tr>
+        <td><strong>concurrent_number</strong></td>
+        <td><i>int</i>, default=5</td>
+        <td>The number of concurrent tasks to run for generating adversarial prompts.</td>
+      </tr>
+      <tr>
+        <td><strong>epochs</strong></td>
+        <td><i>int</i>, default=20</td>
+        <td>The number of epochs (iterations) to train the attack model.</td>
+      </tr>
+      <tr>
+        <td><strong>warm_up_iterations</strong></td>
+        <td><i>int</i>, default=1</td>
+        <td>The number of iterations used for warm-up attacks.</td>
+      </tr>
+      <tr>
+        <td><strong>lifelong_iterations</strong></td>
+        <td><i>int</i>, default=4</td>
+        <td>The number of iterations for lifelong (continuous) attacks.</td>
+      </tr>
+    </tbody>
+  </table>
+
 
     <h2>2. Setting up the Models</h2>
     <p>
@@ -88,19 +130,60 @@ result = attacker.run(goals=goals, target=target_model)
     <p>
       The result returned by the <strong>run</strong> method is a list of attack results. Each result entry contains the following keys:
     </p>
-    <ul>
-      <li><strong>original_question</strong>: The original attack goal or question.</li>
-      <li><strong>adversarial_prompt</strong>: The generated adversarial prompt.</li>
-      <li><strong>target_answer</strong>: The target model's response to the adversarial prompt.</li>
-      <li><strong>execution_time</strong>: Time taken for the entire attack process (from prompt generation to model response).</li>
-      <li><strong>prompt_token_cost</strong>: Token cost for generating the adversarial prompt, corresponding to the red-team model's call.</li>
-      <li><strong>completion_token_cost</strong>: Token cost for the red-team model's response to the adversarial prompt (not the target model's response).</li>
-      <li><strong>total_token_cost</strong>: Total token cost, combining both the red-team model's prompt generation and its response to the adversarial prompt. This does not include the target model's query cost.</li>
-      <li><strong>target_prompt_token_cost</strong>: Token cost for the target model's input prompt.</li>
-      <li><strong>target_completion_token_cost</strong>: Token cost for the target model's response.</li>
-      <li><strong>target_total_token_cost</strong>: Total token cost for both input and output of the target model.</li>
-      <li><strong>round_number</strong>: The current round of the attack process (useful for multi-round attacks).</li>
-    </ul>
+        <table className="param-table">
+    <thead>
+        <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td><strong>original_question</strong></td>
+        <td>The original attack goal or question.</td>
+        </tr>
+        <tr>
+        <td><strong>adversarial_prompt</strong></td>
+        <td>The generated adversarial prompt.</td>
+        </tr>
+        <tr>
+        <td><strong>target_answer</strong></td>
+        <td>The target model's response to the adversarial prompt.</td>
+        </tr>
+        <tr>
+        <td><strong>execution_time</strong></td>
+        <td>Time taken for the entire attack process (from prompt generation to model response).</td>
+        </tr>
+        <tr>
+        <td><strong>prompt_token_cost</strong></td>
+        <td>Token cost for generating the adversarial prompt, corresponding to the red-team model's call.</td>
+        </tr>
+        <tr>
+        <td><strong>completion_token_cost</strong></td>
+        <td>Token cost for the red-team model's response to the adversarial prompt (not the target model's response).</td>
+        </tr>
+        <tr>
+        <td><strong>total_token_cost</strong></td>
+        <td>Total token cost, combining both the red-team model's prompt generation and its response to the adversarial prompt. This does not include the target model's query cost.</td>
+        </tr>
+        <tr>
+        <td><strong>target_prompt_token_cost</strong></td>
+        <td>Token cost for the target model's input prompt.</td>
+        </tr>
+        <tr>
+        <td><strong>target_completion_token_cost</strong></td>
+        <td>Token cost for the target model's response.</td>
+        </tr>
+        <tr>
+        <td><strong>target_total_token_cost</strong></td>
+        <td>Total token cost for both input and output of the target model.</td>
+        </tr>
+        <tr>
+        <td><strong>round_number</strong></td>
+        <td>The current round of the attack process (useful for multi-round attacks).</td>
+        </tr>
+    </tbody>
+    </table>
     <h2>5. Further Reading</h2>
 <p>
   If you're interested in learning more about how <strong>AutoDANTurbo</strong> works and the strategies behind it, please refer to the following paper:

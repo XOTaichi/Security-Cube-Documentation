@@ -120,59 +120,59 @@ result = attacker.run(goals=goals, target=target_model, target_strs=target_strs,
       <strong>result</strong> is a list (each element corresponds to an attack attempt / record). Assume the returned entry follows the common <code>result_entry</code> structure:
     </p>
     <table className="param-table">
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>original_question</strong></td>
-      <td>The original attack goal or question.</td>
-    </tr>
-    <tr>
-      <td><strong>adversarial_prompt</strong></td>
-      <td>The generated adversarial prompt.</td>
-    </tr>
-    <tr>
-      <td><strong>target_answer</strong></td>
-      <td>The target model's response to the adversarial prompt.</td>
-    </tr>
-    <tr>
-      <td><strong>execution_time</strong></td>
-      <td>Time taken for the entire attack process (from prompt generation to model response).</td>
-    </tr>
-    <tr>
-      <td><strong>prompt_token_cost</strong></td>
-      <td>Token cost for generating the adversarial prompt, corresponding to the red-team model's call.</td>
-    </tr>
-    <tr>
-      <td><strong>completion_token_cost</strong></td>
-      <td>Token cost for the red-team model's response to the adversarial prompt (not the target model's response).</td>
-    </tr>
-    <tr>
-      <td><strong>total_token_cost</strong></td>
-      <td>Total token cost, combining both the red-team model's prompt generation and its response to the adversarial prompt. This does not include the target model's query cost.</td>
-    </tr>
-    <tr>
-      <td><strong>target_prompt_token_cost</strong></td>
-      <td>Token cost for the target model's input prompt.</td>
-    </tr>
-    <tr>
-      <td><strong>target_completion_token_cost</strong></td>
-      <td>Token cost for the target model's response.</td>
-    </tr>
-    <tr>
-      <td><strong>target_total_token_cost</strong></td>
-      <td>Total token cost for both input and output of the target model.</td>
-    </tr>
-    <tr>
-      <td><strong>round_number</strong></td>
-      <td>The current round of the attack process (useful for multi-round attacks).</td>
-    </tr>
-  </tbody>
-</table>
+    <thead>
+        <tr>
+        <th>Parameter</th>
+        <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td><strong>original_question</strong></td>
+        <td>The original attack goal or question.</td>
+        </tr>
+        <tr>
+        <td><strong>adversarial_prompt</strong></td>
+        <td>The generated adversarial prompt.</td>
+        </tr>
+        <tr>
+        <td><strong>target_answer</strong></td>
+        <td>The target model's response to the adversarial prompt.</td>
+        </tr>
+        <tr>
+        <td><strong>execution_time</strong></td>
+        <td>Time taken for the entire attack process (from prompt generation to model response).</td>
+        </tr>
+        <tr>
+        <td><strong>prompt_token_cost</strong></td>
+        <td>Token cost for generating the adversarial prompt, corresponding to the red-team model's call.</td>
+        </tr>
+        <tr>
+        <td><strong>completion_token_cost</strong></td>
+        <td>Token cost for the red-team model's response to the adversarial prompt (not the target model's response).</td>
+        </tr>
+        <tr>
+        <td><strong>total_token_cost</strong></td>
+        <td>Total token cost, combining both the red-team model's prompt generation and its response to the adversarial prompt. This does not include the target model's query cost.</td>
+        </tr>
+        <tr>
+        <td><strong>target_prompt_token_cost</strong></td>
+        <td>Token cost for the target model's input prompt.</td>
+        </tr>
+        <tr>
+        <td><strong>target_completion_token_cost</strong></td>
+        <td>Token cost for the target model's response.</td>
+        </tr>
+        <tr>
+        <td><strong>target_total_token_cost</strong></td>
+        <td>Total token cost for both input and output of the target model.</td>
+        </tr>
+        <tr>
+        <td><strong>round_number</strong></td>
+        <td>The current round of the attack process (useful for multi-round attacks).</td>
+        </tr>
+    </tbody>
+    </table>
 
 
     <p>
