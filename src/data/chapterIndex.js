@@ -118,17 +118,44 @@ export const chapterIndex = [
               {
                 title: 'pap',
                 key: 'Pap'
+              },
+              {
+                title: 'codeattacker',
+                key: 'Codeattacker'
+              },
+              {
+                title: 'renellm',
+                key: 'ReNeLLM'
               }
             ]
           },
           {
             type: 'group',
-            title: 'Postfilter based',
-            key: 'postfilter',
+            title: 'Shuffle based',
+            key: 'shuffle',
             subchapters: [
               {
-                title: 'Aligner',
-                key: 'Aligner'
+                title: 'flip',
+                key: 'Flip'
+              },
+              {
+                title: 'bon',
+                key: 'BON(Best of N)'
+              }
+            ]
+          },
+          {
+            type: 'group',
+            title: 'flaw based',
+            key: 'flaw',
+            subchapters: [
+              {
+                title: 'multilingual',
+                key: 'Multijail'
+              },
+              {
+                title: 'cipher',
+                key: 'CipherChat'
               }
             ]
           },
