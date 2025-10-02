@@ -8,11 +8,29 @@ const PromptGuardIntroduction = () => (
         
         <h2>Initialization</h2>
         <p>To initialize a <code>PromptGuard</code> instance, you must provide the following parameters:</p>
-        <ul>
-            <li><strong>model:</strong> The language model used for generation. This can be an instance of a model like <code>OpenAIModel</code>.</li>
-            <li><strong>prompt_guard_path (optional):</strong> The path to the pre-trained model (default is "meta-llama/Llama-Guard-3-8B"). This model performs safety checks on the generated responses.</li>
-            <li><strong>log_file (optional):</strong> The path to a JSON log file for recording token counts and safety checks. If not provided, logging is disabled.</li>
-        </ul>
+        <table className="param-table">
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+    <tbody>
+        <tr>
+        <td><strong>model</strong></td>
+        <td>The language model used for generation (e.g. an instance of <code>OpenAIModel</code> or any <code>BaseLanguageModel</code> wrapper). This is the target model that PromptGuard will protect.</td>
+        </tr>
+        <tr>
+        <td><strong>prompt_guard_path (optional)</strong></td>
+        <td>Path or Hugging Face model ID for the pre-trained guard model used to perform safety checks (default: <code>"meta-llama/Llama-Guard-3-8B"</code>). Can be a local folder or remote HF identifier.</td>
+        </tr>
+        <tr>
+        <td><strong>log_file (optional)</strong></td>
+        <td>Path to a JSON log file where token counts, decisions and defense activity will be recorded. If omitted, logging is disabled.</td>
+        </tr>
+    </tbody>
+    </table>
+
 
         <h2>Example Code for Using PromptGuard</h2>
         <CodeBlock 

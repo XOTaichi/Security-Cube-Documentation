@@ -116,15 +116,15 @@ export const chapterIndex = [
             key: 'strategy',
             subchapters: [
               {
-                title: 'pap',
+                title: 'Pap',
                 key: 'Pap'
               },
               {
-                title: 'codeattacker',
+                title: 'Codeattacker',
                 key: 'Codeattacker'
               },
               {
-                title: 'renellm',
+                title: 'Renellm',
                 key: 'ReNeLLM'
               }
             ]
@@ -135,12 +135,12 @@ export const chapterIndex = [
             key: 'shuffle',
             subchapters: [
               {
-                title: 'flip',
+                title: 'Flip',
                 key: 'Flip'
               },
               {
-                title: 'bon',
-                key: 'BON(Best of N)'
+                title: 'BON(Best of N)',
+                key: 'Bon'
               }
             ]
           },
@@ -150,12 +150,23 @@ export const chapterIndex = [
             key: 'flaw',
             subchapters: [
               {
-                title: 'multilingual',
+                title: 'Multijail',
                 key: 'Multijail'
               },
               {
-                title: 'cipher',
+                title: 'CipherChat',
                 key: 'CipherChat'
+              }
+            ]
+          },
+          {
+            type: 'group',
+            title: 'template based',
+            key: 'template',
+            subchapters: [
+              {
+                title: 'GPTFuzz',
+                key: 'GPTFuzz'
               }
             ]
           },
@@ -195,6 +206,10 @@ export const chapterIndex = [
               {
                 title: 'PromptGuard',
                 key: 'PromptGuard'
+              },
+              {
+                title: 'Hidden State Guard',
+                key: 'Hidden_State_Guard'
               }
             ]
           },
